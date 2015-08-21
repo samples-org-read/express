@@ -16,17 +16,10 @@ after_script:
   - ./node_modules/.bin/istanbul report cobertura --dir shippable/codecoverage/
   - cp README.md ./shippable
   
-notifications:
-     email:
-         recipients:
-             - vidya@shippable.com
-             - buildsampletest@gmail.com
-            # - vidyac.raghav@gmail.com
-         on_success: always
-         on_failure: always
+
 
 archive: true
 
-#cache: true
+cache: true
 
 
